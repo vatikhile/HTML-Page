@@ -575,3 +575,18 @@ background-color: rgb(233, 239, 239);
   border-radius: 50px;
   width: 80px;
 }
+#chartContainer{
+  height: 200px;
+}
+/* .chr2::before {
+  content: "";
+}
+.chr2::after {
+  content: "";
+}
+.vl::before {
+  content: "";
+}
+.vl::after {
+  content: "";
+} */

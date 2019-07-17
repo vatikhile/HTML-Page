@@ -6,6 +6,7 @@ window.onload = function () {
         // title:{
         //     text: "Simple Line Chart"
         // },
+        
         axisY:{
             includeZero: false
         },
