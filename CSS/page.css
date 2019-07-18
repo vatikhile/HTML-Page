@@ -10,9 +10,7 @@
   z-index: 99;
  
   }
-  element.style {
-    z-index: 99;
-}
+
 .topnav b{
   font-size: 26px;
   font-family: sans-serif;
@@ -42,7 +40,7 @@
   }
   
   
-  /* Add a color to the active/current link */
+  /* Add a color to the link */
   .topnav a.active {
     background-color:	#6E64FA;
     color: white;
@@ -69,7 +67,7 @@
   .navb a{
     background-color: #F9F8FD;
     width: 20px;
-  display: table-cell;
+    display: table-cell;
 
   }
 .nav{
@@ -84,13 +82,19 @@
   height: 27px;
   background-color: #F9F8FD;
   border: transparent;
-outline: none;
+  outline: none;
 }
-#element1 {float:left;}
-#element2 {float:left;
-  margin-top: 18px;
-  margin-left: 635px;}
-#element3 {float:right;
+#element1
+ {
+   float:left;}
+#element2 
+{
+  float:left;
+margin-top: 18px;
+margin-left: 635px;}
+#element3 
+{
+  float:right;
 margin-right: 240px}
 #element4 {
   float: right;
@@ -444,6 +448,9 @@ background-color: rgb(233, 239, 239);
     background-color: white;
     text-align: left;
   }
+  #chartContainer1{
+    height: 250px;
+  }
 .span4{
   display: inline-flex;
 }
@@ -501,6 +508,7 @@ background-color: rgb(233, 239, 239);
 
 .chr .chr3{
    color: #907e71;
+   /* width: 14px !important; */
 }
 .chr img{
   width: 13px;
@@ -576,17 +584,92 @@ background-color: rgb(233, 239, 239);
   width: 80px;
 }
 #chartContainer{
-  height: 200px;
+  height: 277px;
+  margin-top: 23px;
 }
-/* .chr2::before {
-  content: "";
+.updates{
+font-size: 18px; 
+margin-bottom: 40px;
 }
-.chr2::after {
-  content: "";
+
+.grid-item2 > div{
+margin-left: 24px;
 }
-.vl::before {
-  content: "";
+
+.updateLine {
+padding-left: 30px;
+position: relative;
 }
-.vl::after {
+
+.updateLine img{
+  width: 14px;
+}
+
+.updateLine > div {
+position: relative;
+display: inline;
+}
+
+/* circle */
+.updateLine div:before {
+content: "";
+position: absolute;
+border-radius: 100%;
+border: 3px solid #464de4;
+width: 12px;
+height: 12px;
+left: -30px;
+top: 2px;
+z-index:3;
+background: #ffff;
+}
+
+/* line */
+.updateLine:after {
+content: "";
+position: absolute;
+border: 1px solid #d5dcec;
+top: 30px;
+bottom: 0;
+left: 8px;
+top: 2px;
+}
+ .cartMain > div{
+  margin-left: 24px;
+  }
+  
+  .updateLine {
+  padding-left: 30px;
+  position: relative;
+  }
+  
+  .updateLine > div {
+  position: relative;
+  display: inline;
+  }
+
+  .updateLine div:before {
+
+  position: absolute;
+  border-radius: 100%;
+  border: 3px solid #464de4;
+  width: 12px;
+  height: 12px;
+  left: -30px;
+  top: 2px;
+  z-index:1;
+  background: #ffff;
   content: "";
-} */
+  }
+  
+
+  .updateLine:after {
+
+  position: absolute;
+  border: 1px solid #d5dcec;
+  top: 30px;
+  content: "";
+  bottom: 0;
+  left: 8px;
+  top: 2px;
+  }
